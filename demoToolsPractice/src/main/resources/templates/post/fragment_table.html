@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <th:block th:replace="~{/post/community_all :: setContent(~{this::content})}">
+        <th:block th:fragment="content">
+            <main class="main">
+                <div class="post">
+                    <div class="post_head">
+                        <p><b>자유 게시판</b> | 잡담</p>
+                        <h3>아칼리 상향좀;;</h3>
+<!--                        <img src="./ID.png" alt="" />-->
+                        <a href="">내여친 아칼리</a>
+                    </div>
+                    <hr />
+                    <textarea name="" id="post-content" readonly></textarea>
+                    <hr />
+                    <div class="post_foot">
+                        <button>좋아요</button>
+                        <button>공유?</button>
+                    </div>
+                </div>
+                <div class="chat"></div>
+            </main>
+        </th:block>
+    </th:block>
+</html>
